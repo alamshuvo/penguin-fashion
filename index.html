@@ -1,19 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Penguin Fashion</title>
-</head>
-<body>
-    <header>
+    <!-- font family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- tailwind cdn -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- some css -->
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+      .container {
+        max-width: 80rem;
+        width: 80%;
+        box-sizing: border-box;
+      }
+      .font-roboto {
+        font-family: "Roboto", sans-serif;
+      }
+      .font-Bebas-Neue {
+        font-family: "Bebas Neue", sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- header section -->
+    <header class="bg-[#FFFBF0] ">
+      <!-- nav section -->
+      <nav class="container m-auto">
+        <div class="flex justify-between items-center">
+          <div class="w-80">
+            <img src="./icons/logo.png" alt="" />
+          </div>
+          <div>
+            <div>
+              <ul class="flex gap-10 font-roboto text-base text-[#3C3C3C] p-5 mr-10 ">
+                <li><a href="#">home</a></li>
+                <li><a href="#">product</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Contact us</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!-- banner section -->
+      <section class="container  m-auto mt-20 flex justify-between items-center" >
+        <!-- banner left side -->
+        <div class="w-6/12  leading-3 font-normal">
+          <h2 class="text-6xl mb-5 font-Bebas-Neue">
+            <span class="text-[#FABE4C] font-Bebas-Neue ">Be the Penguins</span><br />
+            of Winter
+          </h2>
+          <p class="mb-5 text-[#3E3E3E] font-roboto ">
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry.
+          </p>
 
+          <button class=" justify-between px-10 py-5 bg-gradient-to-r from-[#A4BC46] to-[#85A019] text-white rounded-lg uppercase font-medium">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 inline mr-3">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+              </svg>
+              
+            
+            
+            Buy now
+          </button>
+        </div>
+        <!-- banner rightt side -->
+        <div class="w-6/12">
+            <img src="./images/model.png" alt="">
+        </div>
+      </section>
     </header>
     <main>
 
+    
     </main>
-    <footer>
-        
-    </footer>
-</body>
+    <footer></footer>
+  </body>
 </html>
